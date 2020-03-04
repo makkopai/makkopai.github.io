@@ -32,8 +32,9 @@
                 <a-obj-model id="santa" obj-model="obj:#santa-obj; mtl:#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5"
                     rotation="0 0 0"></a-obj-model>
                 <a-entity>
-                    <a-text text="value:Hello NRI！!！" position="0 0 0" align="center" rotation="-90 0 0 "></a-text>
-                    <a-animation attribute="rotation" to="0 360 0" dur="4000" repeat="indefinite" easing="linear"></a-animation>
+                    <a-text text="value:Hello NRI！!！" position="0 0 0" align="center" rotation="-90 0 0 " 
+                            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+                    </a-text>
                 </a-entity>
             </a-marker>
 <!-- arなのでこんな感じでカメラが必要らしい。 -->
