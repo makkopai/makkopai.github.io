@@ -1,6 +1,6 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib Astronaut.mtl
+mtllib astronaut.mtl
 g default
 v 0.221353 0.421652 0.125387
 v 0.197081 0.409667 -0.147344
