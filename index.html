@@ -66,7 +66,7 @@
             <a-assets>
                 <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
                 <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
-                <a-asset-item id="nri" src="nri.png"></a-asset-item>
+                <a-asset-item id="nri" src="model_obj/nri/nri.png"></a-asset-item>
             </a-assets>
 
 
@@ -79,8 +79,7 @@
                     mtl="#santa-mtl"
                     position="0 0 0"
                     scale="0.5 0.5 0.5"
-                    rotation="0 0 0"
-                    link="href: https://www.nri.com/jp;">
+                    rotation="0 0 0">
                 </a-obj-model>
                 <a-animation  
                     attribute="rotation"
@@ -91,18 +90,17 @@
                 </a-animation>
             </a-entity>
 
-            <a-image 
-                position="2 2 0"
-                src="#nri"
-                rotation="-90 0 0"
-                link="href: https://www.nri.com/jp; tile:NRI web; image: #nri">
-            </a-image>
-            
-            <a-text
-                text="value:Hello NRI！!！"
-                position="0 1.3 0"
-                align="center" >
-            </a-text>
+                <a-image 
+                    position="1 1 0"
+                    rotation="-90 0 0"
+                    link="href: https://www.nri.com/jp; tile:NRI web; image: #nri">
+                </a-image>
+                
+                <a-text
+                    text="value:Hello WebAR！!！"
+                    position="0 1.3 0"
+                    align="center" >
+                </a-text>
 
             </a-marker>
 <!-- arなのでこんな感じでカメラが必要らしい。 -->
