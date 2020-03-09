@@ -66,6 +66,10 @@
             <a-assets>
                 <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
                 <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
+                <a-asset-item id="nri-obj" src="model_obj/nri/nri.obj"></a-asset-item>
+                <a-asset-item id="nri-mtl" src="model_obj/nri/nri.mtl"></a-asset-item>
+                <a-asset-item id="arumon-obj" src="model_obj/arumon/arumon.obj"></a-asset-item>
+                <a-asset-item id="arumon-mtl" src="model_obj/arumon/arumon.mtl"></a-asset-item>
                 <a-asset-item id="nri" src="nri.png"></a-asset-item>
             </a-assets>
 
@@ -79,8 +83,7 @@
                     mtl="#santa-mtl"
                     position="0 0 0"
                     scale="0.5 0.5 0.5"
-                    rotation="0 0 0"
-                    link="href: https://www.nri.com/jp;">
+                    rotation="0 0 0">
                 </a-obj-model>
                 <a-animation  
                     attribute="rotation"
@@ -91,16 +94,36 @@
                 </a-animation>
             </a-entity>
 
+            <!-- NRI -->
+            <a-obj-model 
+                src="#nri-obj"
+                mtl="#nri-mtl"
+                scale="0.25 0.25 0.25"
+                position="1 0.5 -1.75"
+                rotation="0 180 0"
+                link="href: https://www.nri.com/jp;">
+            </a-obj-model>
+
+            <!-- Arumon -->
+            <a-obj-model 
+                src="#arumon-obj"
+                mtl="#arumon-mtl"
+                scale="0.25 0.25 0.25"
+                position="1 0.5 -1.0"
+                rotation="0 180 0"
+                link="href: https://arumon.net;">
+            </a-obj-model>
+
             <a-image 
                 position="2 2 0"
                 src="#nri"
                 rotation="-90 0 0"
-                link="href: https://www.nri.com/jp; tile:NRI web; image: #nri">
+                link="href: https://www.nri.com/jp;">
             </a-image>
             
             <a-text
-                text="value:Hello NRI！!！"
-                position="0 1.3 0"
+                text="value:Hello WebAR！!！"
+                position="0 1.5 0"
                 align="center" >
             </a-text>
 
