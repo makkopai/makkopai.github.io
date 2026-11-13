@@ -30,6 +30,7 @@
 <tr><td>サムネイル</td><td>ライブラリに表示するために、アーティファクトの表示を縮小した画像</td></tr>
 <tr><td>ページ内のデータ</td><td>アーティファクトが保存するデータ（localStorage など）。ほかに、ブラウザと同じように、キャッシュや Cookie が保存される場合があります</td></tr>
 <tr><td>表示の設定</td><td>テーマ（ライト・ダーク）、配色、並べ替えの順、表示の形式など</td></tr>
+<tr><td>運営者からのお知らせ</td><td>読み込んだお知らせと、閉じたお知らせの記録</td></tr>
 <tr><td>分析と健康診断のための記録</td><td>アーティファクトの特徴（推定した用途、分野、作った AI、使っているライブラリ、言語、大きさ）、開いた日と回数、表示していた時間、取り込み方、更新や削除の回数、健康診断の結果。「ライブラリの分析」と「健康診断」の画面に使います。ページの文章やタイトルは記録しません</td></tr>
 </tbody></table></div>
 <p><strong>iCloud 同期</strong><br>
@@ -56,6 +57,7 @@
 <h2 id="section-4">4. 運営者が取得する情報</h2>
 <p>運営者が取得する情報、または運営者が組み込んだ仕組みによって外部に送られる情報は、5 章（広告）と 6 章（利用統計）に書いたものだけです。</p>
 <p>このほか、有料機能を購入した利用者が「みんなの傾向」を表示するとき、本アプリは、運営者が Google Cloud Storage に置いた集計済みの数字のファイルを読み込みます。この通信では、Web ページを読み込むときと同じように、IP アドレスなどの通信に必要な情報が Google LLC に送られます。運営者は、この通信の記録を利用者の分析に使いません。</p>
+<p>また、本アプリは、運営者からのお知らせ（新機能やアップデートの案内など）を表示するために、起動したときなど（多くても 12 時間に 1 回）、運営者が GitHub Pages に置いたお知らせのファイルを読み込みます。この通信では、Web ページを読み込むときと同じように、IP アドレス、端末と OS の種類などの通信に必要な情報が GitHub, Inc. に送られます。利用者を識別する情報は送りません。運営者はこの通信の記録を受け取りません。お知らせのファイルには運営者の電子署名が付いていて、本アプリは署名を確かめられたお知らせだけを表示します。</p>
 <h2 id="section-5">5. 広告</h2>
 <p>本アプリは、Google LLC が提供する広告配信サービス「Google AdMob」を使って、iPhone と iPad で次の広告を表示します。Mac では広告を表示しません。有料機能を購入した利用者には広告を表示せず、AdMob も動かしません。</p>
 <ul>
@@ -113,6 +115,8 @@
 <tbody>
 <tr><td>Google LLC（Google AdMob）。iPhone と iPad で、有料機能を購入していない場合だけ</td><td>広告識別子（トラッキングを許可した場合）、IP アドレス、端末の種類、OS のバージョン、言語の設定、広告の表示と操作の記録</td><td>広告の配信、効果の測定、不正の防止</td><td><a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a></td></tr>
 <tr><td>Google LLC（Google Analytics for Firebase）。利用統計の送信に同意した場合だけ</td><td>6 章の「送る情報」</td><td>本アプリの改善、統計の作成</td><td><a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a></td></tr>
+<tr><td>Google LLC（Google Cloud Storage）。有料機能を購入した利用者が「みんなの傾向」を表示した場合だけ</td><td>IP アドレス、端末と OS の種類などの通信に必要な情報</td><td>集計済みの数字のファイルの配信</td><td><a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a></td></tr>
+<tr><td>GitHub, Inc.（GitHub Pages）。すべての利用者</td><td>IP アドレス、端末と OS の種類などの通信に必要な情報</td><td>運営者からのお知らせの配信</td><td><a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシーステートメント</a></td></tr>
 </tbody></table></div>
 <h2 id="section-9">9. 子供の利用</h2>
 <p>本アプリは、子供向けに作られたものではありません。運営者は、子供の個人情報を意図して取得することはありません。</p>
