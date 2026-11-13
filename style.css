@@ -6,3 +6,7 @@ main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
 h1 { font-size:28px; margin:0 0 8px; } h2 { font-size:20px; margin:40px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
 h3 { font-size:16px; margin:24px 0 4px; } p, li { color:var(--fg); } .muted { color:var(--muted); }
 a { color:var(--link); } nav { font-size:14px; margin-bottom:32px; } footer { margin-top:56px; font-size:13px; color:var(--muted); }
+.table { overflow-x:auto; margin:16px 0; } table { border-collapse:collapse; width:100%; font-size:15px; }
+th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; } th { background:color-mix(in srgb, var(--line) 40%, transparent); }
+ul ul { margin:4px 0; }
+td { overflow-wrap:anywhere; } td:first-child { min-width:6.5em; }
