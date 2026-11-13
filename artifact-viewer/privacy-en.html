@@ -56,7 +56,6 @@ If you turn on "Sync with iCloud" in Settings, artifacts, artifact details and f
 <p>Links inside an artifact open in your device's default browser (such as Safari), not in the App.</p>
 <h2 id="section-4">4. Information the Operator Receives</h2>
 <p>The only information the Operator receives, or that is sent outside through mechanisms the Operator built into the App, is described in sections 5 (advertising) and 6 (usage statistics).</p>
-<p>In addition, when a user who has purchased the Paid Features views "Community Trends", the App downloads a file of aggregated numbers that the Operator stores on Google Cloud Storage. As with loading any web page, this sends information needed for the connection, such as your IP address, to Google LLC. The Operator does not use records of this connection to analyze users.</p>
 <p>To show announcements from the Operator (such as new features or updates), the App also loads an announcement file that the Operator places on GitHub Pages, when it starts and at similar times (at most once every 12 hours). As with loading any web page, this sends information needed for the connection, such as your IP address and device and OS type, to GitHub, Inc. No information that identifies you is sent, and the Operator does not receive records of this connection. The announcement file carries the Operator's digital signature, and the App shows only announcements whose signature it can verify.</p>
 <h2 id="section-5">5. Advertising</h2>
 <p>On iPhone and iPad, the App uses Google AdMob, an ad service provided by Google LLC, to show the following ads. No ads are shown on Mac. If you have purchased the Paid Features, no ads are shown and AdMob is not started.</p>
@@ -100,8 +99,6 @@ If you turn on "Sync with iCloud" in Settings, artifacts, artifact details and f
 </ul>
 <p>Usage statistics are not combined with the advertising information in section 5 and are not used to personalize ads.</p>
 <p>If you turn off usage statistics, nothing more is sent and the app instance ID on your device is deleted. Because the Operator cannot identify you from the information received, it cannot find and delete the data of an individual user. For how Google handles information, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
-<p><strong>Community Trends</strong><br>
-The Operator produces aggregated numbers from the usage statistics received (for example, the share of artifacts by AI) and shows them in the App's "Library Insights". Anyone can download the file containing these numbers, but categories with few users are left out.</p>
 <p><strong>Providing statistics to third parties</strong><br>
 The Operator may combine data from many users into statistics that cannot identify any person or device, and provide them to third parties or use them in research and reports. Categories with so few users that they could lead to identification are not released.</p>
 <p>Destination: Google LLC (Google Analytics for Firebase). The collected information is exported to BigQuery on Google Cloud, managed by the Operator, and aggregated there.</p>
@@ -115,7 +112,6 @@ The Operator may combine data from many users into statistics that cannot identi
 <tbody>
 <tr><td>Google LLC (Google AdMob). On iPhone and iPad, only if you have not purchased the Paid Features</td><td>Advertising identifier (if you allow tracking), IP address, device type, OS version, language setting, records of ads shown and interactions</td><td>Serving ads, measuring their effectiveness, preventing fraud</td><td><a href="https://policies.google.com/privacy">Google's Privacy Policy</a></td></tr>
 <tr><td>Google LLC (Google Analytics for Firebase). Only if you agree to send usage statistics</td><td>"What is sent" in section 6</td><td>Improving the App, producing statistics</td><td><a href="https://policies.google.com/privacy">Google's Privacy Policy</a></td></tr>
-<tr><td>Google LLC (Google Cloud Storage). Only when a user who purchased the Paid Features views "Community Trends"</td><td>Information needed for the connection, such as IP address and device and OS type</td><td>Delivering the file of aggregated numbers</td><td><a href="https://policies.google.com/privacy">Google's Privacy Policy</a></td></tr>
 <tr><td>GitHub, Inc. (GitHub Pages). All users</td><td>Information needed for the connection, such as IP address and device and OS type</td><td>Delivering announcements from the Operator</td><td><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></td></tr>
 </tbody></table></div>
 <h2 id="section-9">9. Children</h2>
